@@ -6,6 +6,7 @@ import Layout from "./Layout";
 import Home from "./components/home/Home";
 import Contact from "./components/contact/Contact";
 import About from "./components/about/About";
+import Github, { githubInfoLoader } from "./components/github/Github";
 
 // const router = createBrowserRouter([
 //   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter(
       <Route path="" element={<Home/>} />
       <Route path="about" element={<About/>} />
       <Route path="contact" element={<Contact/>} />
+      <Route
+      loader={({githubData}) => githubInfoLoader()} 
+      path="github" 
+      element={<Github/>} />
 
 
     </Route>
