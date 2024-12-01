@@ -14,6 +14,7 @@ function App() {
       {console.log(import.meta.env.VITE_APPWRITE_DATABASE_ID)}
       {console.log(import.meta.env.VITE_APPWRITE_COLLECTION_ID)}
       {console.log(import.meta.env.VITE_APPWRITE_BUCKET_ID)}
+      {console.log(import.meta.env.VITE_APPWRITE_BUCKET_ID)}
     </>
   );
 }
